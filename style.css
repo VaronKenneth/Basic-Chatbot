@@ -53,9 +53,9 @@ header h2 {
 }
 
 .chatbot .chatbox {
-    height: 25rem;
+    height: 27rem;
     overflow-y: auto;
-    padding: 1rem 1.5rem 4rem;
+    padding: 30px 20px 100px
 
 }
 
@@ -63,12 +63,15 @@ header h2 {
     display: flex;
 }
 
-.chatbot .chat p {
-    padding: 1rem 0.9rem;
+.chatbox .chat p {
+    white-space: pre-wrap;
+    padding: 12px 20px;
+    border-radius: 10px 10px 0 10px;
+    max-width: 75%;
+    color: #fff;
+    font-size: 0.95rem;
     background: #f5630f;
-    border-radius: 0.8rem 0.8rem 0 0.8rem;
-    font-size: 0.9rem;
-}
+  }
 
 .chatbot .incoming span { 
     align-self: flex-end;
@@ -89,12 +92,13 @@ header h2 {
 }
 
 .chatbot .outgoing {
-    margin: 1rem 0;
+    margin: 1.25rem 0;
     justify-content: flex-end;
 }
 
 .chatbot .chat-input  {
     position: absolute;
+    height: 15%;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -102,18 +106,19 @@ header h2 {
     color: #000000;
     gap: 5px;
     padding: 5px 20px;
+    border-top: 1px solid #ddd;
 
 }
 
 .chatbot .chat-input textarea { 
-
-    height: 5rem;
+    height: 55px;
     width: 100%;
     border: none;
     outline: none;
-    font-size: 1rem;
     resize: none;
-    padding: 1.5rem 9.9rem 1rem 0;
+    max-height: 180px;
+    padding: 15px 15px 15px 0;
+    font-size: 0.95rem;
 }
 
 .chatbot .chat-input span {
